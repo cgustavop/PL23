@@ -1,9 +1,12 @@
 import json
-
+import re
 #def process_header(header):
-
+# (?P<coluna>[a-zA-Z0-9éúíóÀà]+?,) normal
+# (?P<lista>[a-zA-Z]+{(?P<elementos>(\d+,?)*)})
 #    columns = header.split(',')
 
+pattern = re.compile(r'(?P<coluna>[a-zA-Z0-9éúíóÀà]+?,)|(?P<lista>[a-zA-Z]+{(?P<elementos>(\d+,?)*)})')
+# dá-nos as categorias e elementos de uma eventual categoria especial
 
 filepath = input("CSV file path: ")
 outpath = filepath.split('.')[0] + ".json"
