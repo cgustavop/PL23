@@ -120,7 +120,7 @@ No caso de existirem listas, os campos que representam essas listas devem ser ma
 ```
 
 Nos casos em que temos uma lista com uma função de agregação, o processador deve executar a função associada à lista, e
-colocar o resultado no JSON, identificando na chave qual foi a função executada ("`alunos4.csv ==> alunos4.json`"):
+colocar o resultado no JSON, identific´ando na chave qual foi a função executada ("`alunos4.csv ==> alunos4.json`"):
 
 ```
 [
